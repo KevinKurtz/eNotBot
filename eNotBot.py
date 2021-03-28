@@ -65,7 +65,7 @@ async def on_message(message):
 		if message.author.id == cfg.myID:
 			#This means we want to kill the watchdog or other processes too if they are running
 			if message.content == '!shutdown full': 
-				proc = subprocess.Popen(['pkill','notbot_wd','-KILL'])
+				proc = subprocess.Popen(['pkill','enotbot_wd','-KILL'])
 				logger.info('Watchdog killed by shutdown full.')
 
 			logger.info('Client shutdown by admin commmand.')
@@ -88,7 +88,7 @@ async def on_ready():
 	logger.info(f'Logged into Discord as: {client.user.name}')
 	#send the admin a DM letting them know we are logged in (so they are alerted on an accidental restart or other problem)
 	user = await client.fetch_user(cfg.myID)
-	await user.send('bot booted and logged in.')
+	await user.send('eNotBot started and logged in.')
 	
 
 if __name__ == "__main__":
