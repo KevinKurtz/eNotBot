@@ -1,8 +1,10 @@
 # e-Not Bot
 
-*Author:* Kevin C. Kurtz kevinckurtz.com magnetengineer.com
-*Language:* Python3
-*Summary:* e-Not Bot (e-Notifications Bot) was created to automate and anticipate my needs across the web. Focused primarily on Discord, the bot also features web services, Alexa skills, and general script running. It is my interface to interact with the world and my server. Planned integrations for more services.
+**Author:** Kevin C. Kurtz kevinckurtz.com magnetengineer.com
+
+**Language:** Python3
+
+**Summary:** e-Not Bot (e-Notifications Bot) was created to automate and anticipate my needs across the web. Focused primarily on Discord, the bot also features web services, Alexa skills, and general script running. It is my interface to interact with the world and my server. Planned integrations for more services.
 
 ## Installation
 
@@ -26,4 +28,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
-Give me credit, of course, and please. But do what you want/can. [Better yet, pay me to help you.]
+Give me credit, of course, and please. But do what you want/can. [Better yet, pay me to help you. kevin@kevinckurtz.com]

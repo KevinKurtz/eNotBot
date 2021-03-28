@@ -31,10 +31,12 @@ app = quart.Quart(__name__)
 
 @app.route('/')
 async def default():
+	#eventually, there will be some sort of templated page here. Until then. Why don't we just sent some simple text.
 	return 'e-Not Bot'
 
 @app.route('/strava')
 async def strava():
+	#eventually, there will be some sort of templated page here. Until then. Why don't we just sent some simple text.
 	return 'strava'
 
 @app.route('/strava/sub', methods=['GET', 'POST'])
@@ -90,9 +92,10 @@ async def strava_auth():
 		logger.exception('A request on /strava/auth broke')
 		return 'The request broke', 500
 
-@app.errorhandler(404)
+@app.errorhandler()
 async def page_not_found(e):
-	return 'get outtttta here.'
+	#eventually, there will be some sort of templated page here. Until then. Why don't we just sent some simple text.
+	return 'You have encountered an error, because of something you did, not me. I\'m perfect. If you think you SHOULDN\'T be seeing this page, contact me at pretty_much_anything at thisdomain.com'
 
 if __name__ == '__main__':
 	#not available publically. Only loop back. You should reverse proxy from apache2 or some other real web server that can handle requests properly and then internally route.
